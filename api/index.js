@@ -1,6 +1,9 @@
 const express = require("express");
+const cors = require("cors");
 require("../src/db/conn")
 
+// Allow all origins
+app.use(cors());
 
 const ProductsRanking = require("../src/models/product");
 const app = express();
